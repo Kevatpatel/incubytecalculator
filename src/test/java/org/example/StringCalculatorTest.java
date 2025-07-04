@@ -24,6 +24,12 @@ public class StringCalculatorTest extends TestCase {
         assertEquals(10, result);
     }
 
+    public void testShouldAllowNewlineAsDelimiter() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1\n2,3");
+        assertEquals(6, result);
+    }
+
 
 
 }

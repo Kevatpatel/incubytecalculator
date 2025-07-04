@@ -30,6 +30,12 @@ public class StringCalculatorTest extends TestCase {
         assertEquals(6, result);
     }
 
+    public void testShouldSupportCustomDelimiter() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("//;\n1;2");
+        assertEquals(3, result);
+    }
+
 
 
 }

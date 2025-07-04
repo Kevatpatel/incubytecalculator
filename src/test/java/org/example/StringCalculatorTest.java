@@ -16,11 +16,14 @@ public class StringCalculatorTest extends TestCase {
         assertEquals(1, result);
     }
 
-    public void testShouldReturnSumOfTwoNumbers() {
+
+
+    public void testShouldReturnSumOfMultipleNumbers() {
         StringCalculator calculator = new StringCalculator();
-        int result = calculator.add("1,5");
-        assertEquals(6, result);
+        int result = calculator.add("1,2,3,4");
+        assertEquals(10, result);
     }
+
 
 
 }
